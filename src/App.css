@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.emg-wind {
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  text-align: center;
+}
+
+.send-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.send-btn:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.send-input {
+  border: none;
+  padding: 9px;
+  border-bottom: 1px solid #171515;
+  font-size: 14px;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  margin-right: 5px;
+}
+
+

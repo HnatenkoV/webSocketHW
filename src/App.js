@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WSProvider, { wsContext } from "./providers/wsProvider";
+import WsDemo from "./components/wsDemo";
+import EmergencyWindow from "./components/emergWindow";
+import ConnectStatus from "./components/connectStatus";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+
+const App = () => (
+  <WSProvider>
+    <WsDemo/>
+      <EmergencyWindow/>
+      <ConnectStatus/>
+  </WSProvider>
+);
 
 export default App;
